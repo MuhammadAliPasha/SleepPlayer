@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SleepPlayer</string>
+	<string name="intro">Deberías abrir esta app desde un enlace de descarga de audio</string>
+	<string name="no_audio_stream">No hay flujo de audio...</string>
+	<string name="error_retrieving_stream">Error obteniendo flujo...</string>
+	<string name="reproducir">reproducir</string>
+	<string name="pausa">pausa</string>
+	<string name="cargando">cargando flujo de audio</string>
+	
+</resources>
