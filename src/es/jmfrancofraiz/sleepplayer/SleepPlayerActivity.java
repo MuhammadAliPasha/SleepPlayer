@@ -171,6 +171,7 @@ public class SleepPlayerActivity extends Activity {
     @Override
     protected void onResume() {
     	Log.i(TAG, "Resuming...");
+    	if (SleepPlayer.getInstance().getState() == State.PLAYING) playingScreen();
     	//if (SleepPlayer.getInstance() != null) SleepPlayer.getInstance().cancelNotification();
     	super.onResume();
     }
