@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SleepPlayer</string>
-	<string name="intro">You should open this app from an audio download link</string>
+    <string name="app_name">Sleep Player</string>
+	<string name="intro">You should open this app from an audio download link in your web browser. Hit MENU for more options.</string>
 	<string name="no_audio_stream">No audio stream...</string>
 	<string name="error_retrieving_stream">Error retrieving stream...</string>
 	<string name="reproducir">play</string>
 	<string name="pausa">pause</string>
 	<string name="cargando">loading audio stream</string>
+	<string name="acerca_de">About</string>
+	<string name="historial">History</string>
+	<string name="nada">There is no history yet. Play an audio file from your web browser and come back later</string>
+	<string name="hoy">Today</string>
+	<string name="ayer">Yesterday</string>
+	<string name="alas">at</string>
+	<string name="nada_que_reproducir">nothing to play</string>
+	<string name="limpiar_historial">clean history</string>
+	<string name="no_duracion">Unable to get stream length</string>
+	<string name="ok">Ok</string>
+	<string name="quit">Quit</string>
+	<string name="really_quit">Are you sure yo want to quit Sleep Player?</string>
+	<string name="si">Quit</string>
+	<string name="no">Cancel</string>
 
+		
 	<style name="ButtonText">
 		<item name="android:layout_width">fill_parent</item>
 		<item name="android:layout_height">wrap_content</item>
@@ -15,13 +30,25 @@
 		<item name="android:gravity">center</item>
 		<item name="android:layout_margin">3dp</item>
 		<item name="android:textSize">25dp</item>
-		<!-- 
-		<item name="android:textStyle">bold</item>
-		<item name="android:shadowColor">#000000</item>
-		<item name="android:shadowDx">1</item>
-		<item name="android:shadowDy">1</item>
-		<item name="android:shadowRadius">2</item>
-		 -->
 	</style>
+	
+	<style name="BaseTopBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
 
 </resources>

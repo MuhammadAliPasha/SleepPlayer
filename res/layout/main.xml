@@ -1,98 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout 
-	xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:layout_width="fill_parent" 
-	android:layout_height="fill_parent" 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:id="@+id/layoutLabelWheels" android:layout_marginTop="50dp" android:layout_marginBottom="5dp">
-
-
-        <TextView android:id="@+id/textHoras" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="80dp" android:gravity="center" android:text="hrs" android:textStyle="bold" android:textSize="20sp"></TextView>
-
-        <TextView android:id="@+id/textMinutos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="80dp" android:gravity="center" android:text="mins" android:textStyle="bold" android:textSize="20sp"></TextView>
-
-        <TextView android:id="@+id/textSegundos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="80dp" android:gravity="center" android:text="secs" android:textStyle="bold" android:textSize="20sp"></TextView>
-            
-    </LinearLayout>
-    
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:id="@+id/layoutWheels">
-            
-      
-      		<kankan.wheel.widget.WheelView android:id="@+id/hours"
-                    android:layout_height="wrap_content"
-                    android:layout_width="80dp"/>
-                    
-            <kankan.wheel.widget.WheelView android:id="@+id/mins"
-                    android:layout_height="wrap_content"
-                    android:layout_width="80dp"/>
-                    
-            <kankan.wheel.widget.WheelView android:id="@+id/secs"
-                    android:layout_height="wrap_content"
-                    android:layout_width="80dp"/>
-            
-    </LinearLayout>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp"
-            android:visibility="gone"
-            android:id="@+id/layoutDuracion">
-
-            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingRight="10dip" android:paddingLeft="10dip" android:gravity="center_vertical" android:text="00:00:00" android:id="@+id/pendiente" android:layout_weight="1" android:textSize="50sp" android:height="250dip"></TextView>
-            
-    </LinearLayout>
- 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    		android:gravity="bottom"
-    		android:orientation="vertical"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            android:paddingLeft="12dp"
-            android:paddingRight="12dp">
-
-	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	            android:orientation="horizontal"
-	            android:paddingTop="5dp" 
-	            android:paddingBottom="20dp" 
-	            android:layout_height="wrap_content" 
-	            android:layout_width="fill_parent">
-	            
-	        <TextView android:layout_weight="1" android:id="@+id/posicion" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip" android:text="00:00:00" android:width="80dip" android:textStyle="bold"></TextView>    
-	        <SeekBar android:id="@+id/SeekBarTestPlay" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="80"></SeekBar>
-			<TextView android:layout_weight="1" android:id="@+id/duracion" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip" android:text="00:00:00" android:width="80dip" android:textStyle="bold" android:textSize="14sp"></TextView>
-		
+	<LinearLayout android:id="@+id/splashWindow"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+	
+		<ImageView android:layout_height="wrap_content" android:src="@drawable/icon"
+			android:layout_width="fill_parent" android:layout_gravity="center_horizontal"
+			android:id="@+id/imageView1" android:layout_marginTop="120dip"
+			android:layout_marginBottom="10dip"></ImageView>
+	
+		<TextView android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/app_name" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center_horizontal"
+			android:typeface="serif" android:layout_marginBottom="20dip"></TextView>
+	
+		<LinearLayout android:background="@drawable/back_gradient" 
+			android:id="@+id/hint" android:visibility="gone"
+			android:layout_height="wrap_content" android:gravity="center_horizontal"
+			android:layout_width="fill_parent" android:orientation="vertical"
+			android:layout_marginLeft="50dp" android:layout_marginRight="50dp"
+			android:layout_marginTop="20dp" android:layout_marginBottom="10dp">
+			<TextView android:layout_width="wrap_content" android:textSize="15dp"
+				android:gravity="center_horizontal" android:layout_margin="10dp"
+				android:layout_height="wrap_content" android:id="@+id/textView1"
+				android:text="@string/intro" android:textStyle="italic"></TextView>
 		</LinearLayout>
-		
+	
+	</LinearLayout>
+
+	<LinearLayout android:background="@drawable/back_gradient" android:layout_height="wrap_content"
+		android:gravity="center_horizontal" android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp" android:layout_marginTop="20dp"
+		android:layout_marginBottom="10dp" android:id="@+id/layoutUrl" android:visibility="gone">
+		<es.jmfrancofraiz.sleepplayer.ScrollingTextView style="@style/BaseTopBar" android:id="@+id/textViewUrl"
+			android:singleLine="true" android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever"
+			android:scrollHorizontally="true" android:hint="@string/nada_que_reproducir"></es.jmfrancofraiz.sleepplayer.ScrollingTextView>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal" android:paddingLeft="12dp"
+		android:paddingRight="12dp" android:id="@+id/layoutLabelWheels" android:visibility="gone"
+		android:layout_marginTop="10dp" android:layout_marginBottom="5dp">
+
+		<TextView android:id="@+id/textHoras" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:width="80dp"
+			android:gravity="center" android:text="hrs" android:textStyle="bold"
+			android:textSize="20sp"></TextView>
+
+		<TextView android:id="@+id/textMinutos" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:width="80dp"
+			android:gravity="center" android:text="mins" android:textStyle="bold"
+			android:textSize="20sp"></TextView>
+
+		<TextView android:id="@+id/textSegundos"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:width="80dp" android:gravity="center" android:text="secs"
+			android:textStyle="bold" android:textSize="20sp"></TextView>
+
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal" android:paddingLeft="12dp"
+		android:paddingRight="12dp" android:id="@+id/layoutWheels" android:visibility="gone">
+
+		<kankan.wheel.widget.WheelView
+			android:id="@+id/hours" android:layout_height="wrap_content"
+			android:layout_width="80dp" />
+
+		<kankan.wheel.widget.WheelView
+			android:id="@+id/mins" android:layout_height="wrap_content"
+			android:layout_width="80dp" />
+
+		<kankan.wheel.widget.WheelView
+			android:id="@+id/secs" android:layout_height="wrap_content"
+			android:layout_width="80dp" />
+
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal" android:paddingLeft="12dp"
+		android:paddingRight="12dp" android:visibility="gone" android:id="@+id/layoutPendiente">
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:paddingRight="10dip"
+			android:paddingLeft="10dip" android:gravity="center_vertical"
+			android:text="00:00:00" android:id="@+id/pendiente"
+			android:layout_weight="1" android:textSize="50sp" android:height="200dip"></TextView>
+
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:gravity="bottom" android:orientation="vertical" android:id="@+id/layoutBottom"
+		android:layout_height="fill_parent" android:layout_width="fill_parent"
+		android:paddingLeft="12dp" android:paddingRight="12dp">
+
 		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	            android:orientation="horizontal"
-	            android:paddingTop="5dp" 
-	            android:paddingBottom="5dp" 
-	            android:layout_height="wrap_content" 
-	            android:layout_width="fill_parent">
+			android:orientation="horizontal" android:paddingTop="5dp"
+			android:paddingBottom="20dp" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+
+			<TextView android:layout_weight="1" android:id="@+id/posicion"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:gravity="center_vertical" android:paddingLeft="10dip"
+				android:paddingRight="10dip" android:text="00:00:00" android:width="80dip"
+				android:textStyle="bold"></TextView>
+			<SeekBar android:id="@+id/SeekBarTestPlay"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_weight="80"></SeekBar>
+			<TextView android:layout_weight="1" android:id="@+id/duracion"
+				android:layout_width="wrap_content" android:layout_height="fill_parent"
+				android:gravity="center_vertical" android:paddingLeft="10dip"
+				android:paddingRight="10dip" android:text="00:00:00" android:width="80dip"
+				android:textStyle="bold" android:textSize="14sp"></TextView>
+
+		</LinearLayout>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:paddingTop="5dp"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
 
 			<Button android:layout_weight="1" android:text="@string/reproducir"
-				android:id="@+id/ButtonTestPlayPause" android:layout_width="wrap_content"
-				style="@style/ButtonText"
-				android:background="@drawable/green_button" android:layout_height="55dip" android:layout_margin="5dp"/>
-        	
-        </LinearLayout>
-    	
-	</LinearLayout>	
+				android:id="@+id/ButtonPlayPause" android:layout_width="wrap_content"
+				style="@style/ButtonText" android:background="@drawable/green_button"
+				android:layout_height="55dip" android:layout_margin="5dp" />
+
+		</LinearLayout>
+
+	</LinearLayout>
 		
 </LinearLayout>

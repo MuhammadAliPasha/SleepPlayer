@@ -32,6 +32,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.GradientDrawable.Orientation;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
@@ -470,9 +471,14 @@ public class WheelView extends View {
 			return itemHeight;
 		}
 		
-		return getHeight() / visibleItems;
+		if (getHeight() != 0) {
+			return getHeight() / visibleItems;
+		} else {
+			return 50 / visibleItems;
+		}
 	}
-
+	
+	
 	/**
 	 * Calculates control width and creates text layouts
 	 * @param widthSize the input layout width
@@ -700,6 +706,7 @@ public class WheelView extends View {
 	 * @param time scrolling duration
 	 */
 	public void scroll(int itemsToScroll, int time) {
+		Log.d("SleepPlayer", "itemHeight = " + getItemHeight());
 		int distance = itemsToScroll * getItemHeight() - scrollingOffset;
         scroller.scroll(distance, time);
 	}

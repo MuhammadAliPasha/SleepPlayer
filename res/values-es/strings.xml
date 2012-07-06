@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SleepPlayer</string>
-	<string name="intro">Deberías abrir esta app desde un enlace de descarga de audio</string>
+
+    <string name="app_name">Sleep Player</string>
+	<string name="intro">Deberías abrir esta app desde un enlace de descarga de audio desde tu navegador web. Pulsa MENU para más opciones.</string>
 	<string name="no_audio_stream">No hay flujo de audio...</string>
 	<string name="error_retrieving_stream">Error obteniendo flujo...</string>
 	<string name="reproducir">reproducir</string>
 	<string name="pausa">pausa</string>
 	<string name="cargando">cargando flujo de audio</string>
+	<string name="acerca_de">Acerca de</string>
+	<string name="historial">Historial</string>
+	<string name="nada">El historial aún está vacío. Reproduce algún stream de audio desde tu navegador web y vuelve luego</string>
+	<string name="hoy">Hoy</string>
+	<string name="ayer">Ayer</string>
+	<string name="alas">a las</string>
+	<string name="nada_que_reproducir">nada que reproducir</string>
+	<string name="limpiar_historial">limpiar historial</string>
+	<string name="no_duracion">No ha sido posible obtener la duración de este flujo</string>
+	<string name="ok">Aceptar</string>
+	<string name="quit">Cerrar</string>
+	<string name="really_quit">¿Seguro que quieres cerrar Sleep Player?</string>
+	<string name="si">Cerrar</string>
+	<string name="no">Cancelar</string>
 	
+	
+	
+		
 </resources>
