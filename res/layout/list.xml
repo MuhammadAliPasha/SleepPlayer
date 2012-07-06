@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></ListView>
+
+
+	<LinearLayout android:background="@drawable/back_gradient" 
+		android:layout_height="wrap_content" android:id="@android:id/empty"
+		android:gravity="center_horizontal" android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp" android:layout_marginTop="100dp">
+		
+		<TextView android:layout_width="wrap_content" android:textSize="18dp"
+				android:gravity="center_horizontal" android:layout_margin="10dp"
+				android:layout_height="wrap_content" android:text="@string/nada"></TextView>
+				
+	</LinearLayout>
+
+</LinearLayout>

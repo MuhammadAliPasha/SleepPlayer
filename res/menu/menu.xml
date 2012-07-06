@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+          
+    <item android:id="@+id/acerca_de"
+          android:icon="@drawable/acerca_de"
+          android:title="@string/acerca_de" />
+          
+    <item android:id="@+id/historial"
+          android:icon="@drawable/ic_menu_database"
+          android:title="@string/historial" />
+</menu>
